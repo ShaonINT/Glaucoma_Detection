@@ -227,9 +227,7 @@ This is an academic research project. If you find this work useful, please cite:
 ```bibtex
 @article{glaucoma2024,
   title={Benchmarking Deep Learning Models for Glaucoma Detection: From CNN to Vision Transformers},
-  author={[Your Name]},
-  journal={[Journal Name]},
-  year={2024}
+  author={biswas.shaon@gmail.com},
 }
 ```
 
