@@ -77,6 +77,10 @@ test/
 *.xlsx
 *.txt
 
+# Allow images in assets folder for README
+!assets/
+!images/
+
 # Logs
 *.log
 logs/

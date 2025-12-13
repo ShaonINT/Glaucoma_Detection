@@ -10,6 +10,11 @@ A comprehensive data science portfolio project comparing state-of-the-art deep l
 
 Glaucoma is the second leading cause of irreversible blindness worldwide, affecting over 80 million people. Early detection through automated analysis of fundus images can significantly reduce vision loss. This project presents a systematic comparison of CNN, Vision Transformer, and hybrid architectures for glaucoma detection, achieving **99.76% accuracy** with the MaxViT-Tiny model.
 
+<div align="center">
+  <img src="images/model_comparison.png" alt="Model Performance Comparison" width="800"/>
+  <p><em>Model Performance Comparison: Accuracy, F1-Score, and AUC-ROC across different architectures</em></p>
+</div>
+
 ### 🎯 Key Highlights
 
 - 🏆 **State-of-the-Art Performance**: 99.76% accuracy, 99.69% F1-score, and perfect 1.0000 AUC-ROC
@@ -38,6 +43,11 @@ This study benchmarks four distinct deep learning architectures:
 | DeiT-Small/16 | 99.44 | 99.20 | 99.38 | 99.29 | 0.9998 |
 | DINO SSL + Finetune | 81.80 | 85.75 | 63.93 | 73.25 | 0.8797 |
 
+<div align="center">
+  <img src="images/roc_curves.png" alt="ROC Curves Comparison" width="700"/>
+  <p><em>ROC Curves: All models demonstrate excellent discriminative ability</em></p>
+</div>
+
 ### 🔑 Key Findings
 
 - ✅ **MaxViT-Tiny achieves best performance** (99.76% accuracy) - hybrid architecture combining CNN and ViT benefits
@@ -52,7 +62,14 @@ This study benchmarks four distinct deep learning architectures:
 ├── Glaucoma_Detection_model_benchmarking.ipynb    # Main Jupyter notebook (portfolio showcase)
 ├── requirements.txt                               # Python dependencies
 ├── README.md                                      # This file
-└── .gitignore                                     # Git ignore rules
+├── .gitignore                                     # Git ignore rules
+└── images/                                        # Visualization images
+    ├── model_comparison.png
+    ├── roc_curves.png
+    ├── kfold_cv_results.png
+    ├── ablation_study.png
+    ├── gradcam_glaucoma.png
+    └── gradcam_normal.png
 ```
 
 ## 🚀 Quick Start
@@ -132,10 +149,20 @@ The notebook follows academic publication standards (IMRaD format) and includes:
 - Overfitting analysis
 - Generalization assessment
 
+<div align="center">
+  <img src="images/kfold_cv_results.png" alt="K-Fold Cross-Validation Results" width="700"/>
+  <p><em>K-Fold Cross-Validation: Demonstrating robust generalization with minimal overfitting</em></p>
+</div>
+
 ### 6. Ablation Studies ⭐
 - Preprocessing component evaluation
 - Disc crop impact analysis
 - Augmentation effect assessment
+
+<div align="center">
+  <img src="images/ablation_study.png" alt="Ablation Study Results" width="700"/>
+  <p><em>Ablation Study: Impact of different preprocessing techniques on model performance</em></p>
+</div>
 
 ### 7. Model Evaluation
 - Test set performance metrics
@@ -169,6 +196,22 @@ The notebook follows academic publication standards (IMRaD format) and includes:
 - **Method**: Grad-CAM visualization
 - **Finding**: All models focus on optic disc region (clinically relevant)
 - **Impact**: Validates model learning and enables clinical trust
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="images/gradcam_glaucoma.png" alt="Grad-CAM: Glaucoma Case" width="400"/>
+        <p><em>Grad-CAM: Glaucoma Case</em></p>
+      </td>
+      <td align="center">
+        <img src="images/gradcam_normal.png" alt="Grad-CAM: Normal Case" width="400"/>
+        <p><em>Grad-CAM: Normal Case</em></p>
+      </td>
+    </tr>
+  </table>
+  <p><em>Grad-CAM Visualizations: Model attention maps showing focus on optic disc region</em></p>
+</div>
 
 ## 📈 Dataset
 
