@@ -50,8 +50,6 @@ This study benchmarks four distinct deep learning architectures:
 ```
 .
 ├── Glaucoma_Detection_model_benchmarking.ipynb    # Main Jupyter notebook (portfolio showcase)
-├── Research_Paper.md                              # Complete academic paper
-├── Research_Paper.tex                             # LaTeX version of paper
 ├── requirements.txt                               # Python dependencies
 ├── README.md                                      # This file
 └── .gitignore                                     # Git ignore rules
@@ -174,20 +172,14 @@ The notebook follows academic publication standards (IMRaD format) and includes:
 
 ## 📈 Dataset
 
+**Data Source**: [Kaggle](https://www.kaggle.com) - Fundus Image Dataset for Glaucoma Detection
+
 - **Total Images**: 17,242 fundus images
 - **Training Set**: 8,621 images (5,293 normal, 3,328 glaucoma)
 - **Validation Set**: 5,747 images (3,539 normal, 2,208 glaucoma)
 - **Test Set**: 2,874 images (1,754 normal, 1,120 glaucoma)
 - **Class Balance**: ~1.59:1 (Normal:Glaucoma)
 
-## 📝 Research Paper
-
-A complete academic research paper is included in this repository:
-
-- **Markdown Version**: `Research_Paper.md` (~5,900 words)
-- **LaTeX Version**: `Research_Paper.tex`
-
-The paper includes comprehensive methodology, detailed results, discussion of findings, and comparison with existing literature.
 
 ## 🎯 Key Contributions
 
@@ -217,17 +209,6 @@ This project demonstrates:
 - ✅ **Statistical Rigor**: Overfitting analysis, generalization assessment
 - ✅ **Research Communication**: Publication-ready notebook and paper
 
-## 🤝 Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@article{glaucoma2024,
-  title={Benchmarking Deep Learning Models for Glaucoma Detection: From CNN to Vision Transformers},
-  author={Shaon Biswas},
-  year={2024}
-}
-```
 
 ## 📧 Contact
 
@@ -236,9 +217,9 @@ If you find this work useful, please cite:
 
 ## 🙏 Acknowledgments
 
-- Dataset sources and contributors
-- PyTorch and timm communities
-- Vision Transformer research community
+- **Dataset**: Fundus image dataset from [Kaggle](https://www.kaggle.com)
+- **PyTorch** and **timm** communities for excellent deep learning frameworks
+- **Vision Transformer** research community for architectural innovations
 
 ---
 

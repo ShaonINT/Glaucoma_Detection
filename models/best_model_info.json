@@ -1,0 +1,12 @@
+{
+  "best_model": "EfficientNetV2-S + Disc Crop",
+  "best_model_file": "efficientnetv2_s_disc_crop_best.pth",
+  "test_metrics": {
+    "accuracy": 99.79123173277662,
+    "precision": 99.64349376114082,
+    "recall": 99.82142857142857,
+    "f1": 99.73238180196253,
+    "auc": 99.9890047238964
+  },
+  "timestamp": "2025-11-28T06:13:45.721280"
+}

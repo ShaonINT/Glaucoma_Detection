@@ -1,0 +1,33 @@
+{
+  "production_model": {
+    "architecture": "MaxViT-Tiny (Hybrid CNN-ViT)",
+    "model_file": "models/glaucoma_model.pth",
+    "source_file": "models/maxvit_tiny_best.pth",
+    "performance": {
+      "test_accuracy": "99.76%",
+      "f1_score": "99.69%",
+      "auc_roc": "1.0000",
+      "precision": "99.82%",
+      "recall": "99.55%"
+    },
+    "hyperparameters": {
+      "learning_rate": "0.0001",
+      "weight_decay": "0.0001",
+      "training_epochs": "20",
+      "early_stopped": false
+    },
+    "preprocessing": {
+      "disc_crop": false,
+      "image_size": "224x224",
+      "normalization": "ImageNet standard (mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])"
+    },
+    "timm_model_name": "maxvit_tiny_tf_224"
+  },
+  "update_date": "2024-11-30",
+  "notes": [
+    "MaxViT-Tiny achieved the highest accuracy (99.76%) among all tested models",
+    "No disc crop preprocessing required (unlike EfficientNetV2-S)",
+    "Model uses standard ImageNet normalization",
+    "Best model selected after comprehensive hyperparameter tuning and K-Fold CV validation"
+  ]
+}
