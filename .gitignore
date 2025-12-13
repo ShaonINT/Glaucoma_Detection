@@ -1,0 +1,142 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+.conda/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Model files (large - exclude from repo)
+models/*.pth
+models/*.pt
+models/*.ckpt
+models/*.h5
+models/*.pb
+models/*.onnx
+
+# Dataset (exclude large datasets)
+train/
+val/
+test/
+
+# Output files (generated during training/evaluation)
+*.png
+*.jpg
+*.jpeg
+*.csv
+*.html
+*.pdf
+*.docx
+*.xlsx
+*.txt
+
+# Logs
+*.log
+logs/
+tensorboard_logs/
+wandb/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+docker-compose.override.yml
+Makefile
+
+# Shell scripts
+*.sh
+
+# Python scripts (exclude all except keep specific ones if needed)
+*.py
+!requirements.txt  # We don't need this exception since requirements.txt is not .py
+
+# Frontend files
+static/
+templates/
+
+# Other notebooks (keep only the final portfolio notebook)
+*.ipynb
+!Glaucoma_Detection_model_benchmarking.ipynb
+
+# Documentation files (keep README and Research Paper)
+*.md
+!README.md
+!Research_Paper.md
+
+# LaTeX files (keep research paper LaTeX version)
+*.tex
+!Research_Paper.tex
+
+# Keep important files explicitly
+!requirements.txt
+!README.md
+!.gitignore
+
+# Keep model metadata only
+!models/best_model_info.json
+!models/.gitkeep
+
+
+
+
+
